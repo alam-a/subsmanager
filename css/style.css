@@ -239,6 +239,15 @@ footer{
     opacity: .7;
 }
 
+.display-block{
+    display: block;
+}
+
+.display-none{
+    display: none;
+}
+
+
 @media only screen and (min-width: 768px){
     .site-title{
         display: inline-block;
@@ -261,7 +270,7 @@ footer{
     }
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 1024px){
     header,main,footer{
         padding-left: 32px;
         padding-right: 32px;

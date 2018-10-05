@@ -28,3 +28,17 @@ function printMessageTop(){
 function closeMessageTop(){
     document.getElementById('message-top').style='display:none;';
 }
+
+function toggleTabbedMenu(currentTab){
+    if(currentTab == 'login'){
+        document.getElementsByClassName('form-login')[0].classList.remove("display-block");
+        document.getElementsByClassName('form-login')[0].classList.add("display-none");
+        document.getElementsByClassName('form-signup')[0].classList.remove("display-none");
+        document.getElementsByClassName('form-signup')[0].classList.add("display-block");
+    }else{
+        document.getElementsByClassName('form-signup')[0].classList.remove("display-block");
+        document.getElementsByClassName('form-signup')[0].classList.add("display-none");
+        document.getElementsByClassName('form-login')[0].classList.remove("display-none");
+        document.getElementsByClassName('form-login')[0].classList.add("display-block");
+    }
+}
